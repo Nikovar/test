@@ -20,4 +20,5 @@ def test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_in
             break
     
     expect(page.locator(".ymp2tw-8.gtyfwx")).to_have_text("1")
-    print("amount of pizza in cart is " + page.locator(".ymp2tw-8.gtyfwx").all_inner_texts())
+    print("amount of pizza in cart is ")
+    print(page.locator(".ymp2tw-8.gtyfwx").all_inner_texts())
