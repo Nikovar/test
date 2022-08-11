@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 11-Aug-2022 at 15:59:56 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 11-Aug-2022 at 16:10:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -257,13 +257,13 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Windows-10-10.0.19044-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"base-url": "2.0.0", "html": "3.1.1", "metadata": "2.0.2", "playwright": "0.3.0"}</td></tr>
+        <td>{"base-url": "2.0.0", "forked": "1.4.0", "html": "3.1.1", "metadata": "2.0.2", "playwright": "0.3.0", "xdist": "2.5.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.9.7</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 7.57 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 30.93 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -274,14 +274,42 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">case1.py::test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_intro_page[chromium]</td>
-          <td class="col-duration">7.54</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_case1.py::test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_intro_page[chromium]</td>
+          <td class="col-duration">25.79</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Selecting small pizza
-[]
+            <div><div><img src=".playwright-screenshots\test-case1-py-test-homepage-has-playwright-in-title-and-get-started-link-linking-to-the-intro-page-chromium.png" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">[gw1] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/>[gw1] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe[gw1] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/><br/>page = &lt;Page url=&#x27;https://dodopizza.ru/moscow&#x27;&gt;<br/><br/>    def test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_intro_page(page: Page):<br/>        page.goto(&quot;https://dodopizza.ru/moscow&quot;)<br/>        pizzas_table = page.locator(&quot;#pizzas&quot;)<br/>        pizza_count = pizzas_table.locator(&quot;.sc-2v0umu-3&quot;).count()<br/>    <br/>        for i in range(pizza_count):<br/>            pizza = pizzas_table.locator(&quot;.sc-2v0umu-3&quot;).nth(i)<br/>            if pizza.locator(&quot;.sc-91ilwk-0.aUWsZ.product-control&quot;).is_visible() and pizza.locator(&quot;.sc-91ilwk-0.aUWsZ.product-control&quot;).inner_text()==&quot;Выбрать&quot;:<br/>                pizza.locator(&quot;.sc-91ilwk-0.aUWsZ.product-control&quot;).click()<br/>                normal_size= int(page.locator(&quot;.sc-15fdqut-18.lnqOCg .money__value&quot;).inner_text())<br/>                print(&quot;Selecting small pizza&quot;)<br/>                page.locator(&quot;.sc-15fdqut-18.lnqOCg&quot;).locator(&quot;text=Маленькая&quot;)<br/>                small_size= int(page.locator(&quot;.sc-15fdqut-18.lnqOCg .money__value&quot;).inner_text())<br/>                assert(normal_size == small_size)<br/>                page.locator(&quot;.sc-15fdqut-18.lnqOCg&quot;).locator(&quot;text=Добавить в корзину за &quot;).click()<br/>                break<br/>    <br/>        expect(page.locator(&quot;.ymp2tw-8.gtyfwx&quot;)).to_have_text(&quot;1&quot;)<br/>&gt;       print(&quot;amount of pizza in cart is &quot; + page.locator(&quot;.ymp2tw-8.gtyfwx&quot;).all_inner_texts())<br/><span class="error">E       TypeError: can only concatenate str (not &quot;list&quot;) to str</span><br/><br/>test_case1.py:23: TypeError[gw1] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/> ------------------------------Captured stdout call------------------------------ <br/>Selecting small pizza
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_case0.py::test_case0[chromium]</td>
+          <td class="col-duration">21.54</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/>[gw0] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe[gw0] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe[gw0] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/> ------------------------------Captured stdout call------------------------------ <br/>Successful check that доставка пиццы near Москва
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_case2.py::test_case2[chromium]</td>
+          <td class="col-duration">28.72</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw2] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/>[gw2] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe[gw2] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe[gw2] win32 -- Python 3.9.7 C:\Users\nikov\AppData\Local\Programs\Python\Python39\python.exe<br/> ------------------------------Captured stdout call------------------------------ <br/>34
+Обработка 0 случайной пиццы
+Обработка 1 случайной пиццы
+Обработка 2 случайной пиццы
+Обработка 3 случайной пиццы
+Обработка 4 случайной пиццы
+Successful check of amount
+1 478 ₽
+Successful check of amount
 <br/></div></td></tr></tbody></table></body></html>
